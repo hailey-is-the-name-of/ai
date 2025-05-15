@@ -239,7 +239,7 @@ body::after {
   </footer>
 
   <script>
-    Kakao.init('37ea916b7f1ab457b58119c60ec405a');
+    Kakao.init('37ea916b7f1ab457b58119c60ec4052a');
     const totalImages = 5;
     const imageOrder = Array.from({ length: totalImages }, (_, i) => i + 1);
     let currentIndex = 0, currentVisible = 0;
@@ -269,8 +269,8 @@ body::after {
 
     function shareToKakao() {
       const num = imageOrder[currentIndex];
-      const shareUrl = `https://bluenew.life/share/${num}.html`;
-      const imageUrl = `https://bluenew.life/card/images/${num}.jpg`;
+      const shareUrl = `https://bluenew.life/ai/share/${num}.html`;
+      const imageUrl = `https://bluenew.life/ai/images/${num}.jpg`;
       Kakao.Link.sendDefault({
         objectType: 'feed',
         content: {
